@@ -1,18 +1,44 @@
 # My Code here....
 def map_to_negativize(array)
-  array.map { |element| element * -1 }
+  # array.map { |element| element * -1 }
+  new = []
+  i = 0
+  while i < array.length do
+    new.push( array[i] * -1 )
+    i += 1
+  end
+  return new
 end
 
 def map_to_no_change(array)
-  array
+  new = []
+  i = 0
+  while i < array.length do
+    new.push( array[i] )
+    i += 1
+  end
+  return new
 end
 
 def map_to_double(array)
-  array.map { |element| element * 2 }
+  # array.map { |element| element * 2 }
+  new = []
+  i = 0
+  while i < array.length do
+    new.push( array[i] * 2)
+    i += 1
+  end
+  return new
 end
 
 def map_to_square(array)
-  array.map { |element| element ** 2 }
+  new = []
+  i = 0
+  while i < array.length do
+    new.push( array[i] ** 2)
+    i += 1
+  end
+  return new
 end
 
 def reduce_to_total(array, starting_point = 0)
